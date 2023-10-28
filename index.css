@@ -1,0 +1,209 @@
+body{
+    background: #111;
+    position: relative;
+    left: 45%;
+    top: 100px;
+    overflow: hidden;
+}
+#top{
+    height: 50px;
+    background: #ff9c51;
+    box-shadow: 0 0 5px #ff9c51;
+    
+}
+#middle{
+    height: 50px;
+    background: white;
+    box-shadow:0 0 5px white;
+}
+#middle img{
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    -webkit-animation: img_anim 4s infinite linear;
+    animation: img_anim 4s infinite;
+    -webkit-animation-delay: .2s;
+    animation-delay: 0.2s;
+}
+@-webkit-keyframes img_anim
+{
+    0%{opacity:0 ;}
+    30%{
+        opacity: 0;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+    }
+    38%{opacity: 1;}
+    62%{opacity: 1;}
+    70%{
+        opacity: 0;
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+    }
+    100%{opacity: 0;}
+
+}
+@keyframes img_anim
+{
+    0%{opacity:0 ;}
+    30%{
+        opacity: 0;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+    }
+    38%{opacity: 1;}
+    62%{opacity: 1;}
+    70%{
+        opacity: 0;
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+    }
+    100%{opacity: 0;}
+}
+
+#bottom{
+    height: 50px;
+    background: #5aad5e;
+    box-shadow:0 0 5px #5aad5e;
+}
+#rod{
+    width: 10px;
+    height: 450px;
+    background: #874a21;
+    position: relative;
+    top: -152px;
+    left: -7px;
+    border-radius: 40%;
+}
+#text{
+    font-size: 35px;
+    color: white;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    display: block;
+    width: 200px;
+    height: 50px;
+    position: relative;
+    left: -300px;
+    top: -600px;
+    -webkit-animation: text_anim 4.5s infinite;
+    animation: text_anim 4.5s infinite;
+}
+@-webkit-keyframes text_anim{
+    0% {text-shadow: 0 0 20px #473dd0;border-top: 4px solid orange;}
+    25%{border-right: 4px solid white; }
+    50%{text-shadow: none; border-bottom: 4px solid #148809;}
+    100%{text-shadow: 0 0 20px #6da2ff;border-left: 4px solid white;}
+}
+@keyframes text_anim{
+    0% {text-shadow: 0 0 20px #473dd0;border-top: 4px solid orange;}
+    25%{border-right: 4px solid white; }
+    50%{text-shadow: none; border-bottom: 4px solid #148809;}
+    100%{text-shadow: 0 0 20px #6da2ff;border-left: 4px solid white;}
+}
+.notification-content{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    pointer-events: none;
+    animation : floatName 6s ease-in-out infinite;
+}
+@keyframes floatName{
+    0%, 100%{
+        opacity: 0;
+         transform: translateY(0);
+    }
+    50%{
+        opacity: 1;
+        transform: translateY(-20px);
+    }
+}
+
+#bottom-rod{
+    width: 400px;
+    height: 40px;
+    background: #308721;
+    position: relative;
+    top: -162px;
+    left: -7px;
+    border-radius: 40%;
+
+}
+.right-col{
+    font-size: 25px;
+    color: white;
+    line-height: 50px;
+    text-align: center;    
+    border-radius: 100px;
+    display: block;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    right: -400px;
+    top: -600px;
+    text-align: center;
+    -webkit-animation: box-anim  5s infinite;
+    animation: box-anim 5s ease-in-out infinite;
+}
+@-webkit-keyframes box-anim{
+    0% {
+        border-top: 4px solid orange;
+    }
+    25%{
+        border-right: 4px solid white;
+    }
+    50%{
+        border-bottom: 4px solid #148809;
+    }
+    100%{
+        border-left: 4px solid white;
+    }
+}
+@keyframes box-anim{
+    0% {
+        border-top: 4px solid orange;
+    }
+    25%{
+        border-right: 4px solid white;
+    }
+    50%{
+        border-bottom: 4px solid #148809;
+    }
+    100%{
+        border-left: 4px solid white;
+    }
+}
+.right-col img{
+    width: 40px;
+    height: 50px;
+    position: relative;
+    display: block;
+    margin-left: 35%;
+    margin-top: 0%;
+}
+#flag{
+
+ -webkit-animation: flag_anim 4.5s infinite;
+    animation: flag_anim 4.5s infinite;
+}
+@-webkit-keyframes flag_anim
+{
+    0%{width: 0px;}
+    30%{width: 250px;}
+    70%{width: 250px;}
+    100%{width: 0px;}
+}
+@keyframes flag_anim
+{
+    0%{width: 0px;}
+    30%{width: 250px;}
+    70%{width: 250px;}
+    100%{width: 0px;}   
+}
